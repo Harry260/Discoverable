@@ -17,6 +17,12 @@
         margin-left:0px;
     }
 
+    .text-content{
+        overflow: scroll;
+        max-height: 10vh;
+        min-height: calc(100vh - 80px);
+    }
+
     .headr{
         z-index: 999;
         padding-bottom: 20px;
@@ -26,14 +32,14 @@
         margin: 0;
     }
 
-    .bottom_nav nav{
-        z-index: 999;
-        width: 100%;
-        left: 25px;
+    .bottom_nav{
+        display: none;
     }
 
     .wiki-btn{
-        bottom: 150px;
+        bottom: 25px;
+        text-align: center;
+        right: 25px;
     }
 
     #cursor{
