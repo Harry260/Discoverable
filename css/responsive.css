@@ -1,0 +1,50 @@
+@media (max-width:1000px){
+    .story-card{
+        margin: 0;
+        min-width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        padding-top: 0px;
+        scroll-snap-align: start;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+        z-index:9;
+        box-shadow: none !important;
+        margin-left: 10px;
+    }
+    
+    .story-card:nth-child(1){
+        margin-left:0px;
+    }
+
+    .headr{
+        z-index: 999;
+        padding-bottom: 20px;
+    }
+
+    .header-inner{
+        margin: 0;
+    }
+
+    .bottom_nav nav{
+        z-index: 999;
+        width: 100%;
+        left: 25px;
+    }
+
+    .wiki-btn{
+        bottom: 150px;
+    }
+
+
+}
+
+@media (max-width:750px){
+    .text-content{
+        padding: 25px;
+    }
+
+    .wiki-btn{
+        left: 25px;
+    }
+}

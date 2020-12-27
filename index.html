@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="icon" href="assets/fav.png" sizes="16x16" type="image/png">
+
+    <!-- Primary Meta Tags -->
+    <title>Discoverable - On this day</title>
+    
+    <meta name="title" content="Discoverable - On this day">
+    <meta name="description" content="Know what happened in the history to on the go!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discoverable - On this day">
+    <meta property="og:description" content="Know what happened in the history to on the go!">
+
+    <!-- Twitter -->
+    <meta property="twitter:title" content="Discoverable - On this day">
+    <meta property="twitter:description" content="Know what happened in the history to on the go!">
+
+
+</head>
+
+<body>
+   
+    <div class="headr">
+        <div class="header-inner">
+            <img class="nano-fav" src="assets/fav.png" alt="">
+            <h1 class="logo-title" id="app-bar-title">Discoverable</h1>
+        </div>
+    </div>
+    
+    <div class="wrapper" id="root"></div>
+
+    <div class="loader" id="load-pane">
+        <div class="loader-in">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_JOuuND.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+        </div>
+    </div>
+
+    <div class="pop-layout" style="display:none">
+        <div class="tutorial-pop">
+            <div class="tap-pane">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_n8nVuY.json"  background="transparent"  speed="1"  style="width:300px; height: 100px;"  loop  autoplay></lottie-player>
+                <div class="pop-content">
+                    <h2>Double tap</h2>
+                    <p>Double tap over the image to view description. And adouble tap again to view the image again.</p>
+                </div>
+                <button onclick="open_tut(1)"  class="next-btn">
+                    Next
+                </button>
+            </div>
+            <div  class="swipe-pane" style="display: none;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_dyCvvs.json"  background="transparent"  speed="1"  style="width:300px; height: 100px;"  loop  autoplay></lottie-player>
+
+                <div class="pop-content">
+                    <h2>Swipe!</h2>
+                    <p>Swipe left and write witho your finger or mouse to switch between cards.</p>
+                </div>
+                <button onclick="close_tut()" class="next-btn">
+                    Done
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom_nav">
+        <nav>
+            <a id="events-btn" onclick="fetchEvents()">Events</a>
+            <a id="births-btn" onclick="fetchBirths()">Births</a>
+            <a id="deaths-btn" onclick="fetchDeaths()">Deaths</a>
+        </nav>
+    </div>
+    
+
+    <!--div id="root"></div-->
+    <!--Self-hosted scripts-->
+    <div id="script-root"></div>
+    <div id="cursor"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/gh/Harry260/cookify.js/app.js' ></script>
+    <script src="js/app.js" type="text/JavaScript"></script>
+    <script src="js/app-ui.js" type="text/JavaScript"></script>
+    <script src="js/theme.js" type="text/JavaScript"></script>
+
+</body>
+
+</html>
