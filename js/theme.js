@@ -32,6 +32,14 @@ function themeDark(){
     $( '.story-abstract' ).css({
         "color": dark_text_sub
     })
+
+    $( '.bottom_nav nav a' ).css({
+        "color": dark_text_head
+    })
+
+    $( '.active-topic' ).attr({
+        "style": ''
+    })
 }
 
 function themeLight(){
@@ -44,6 +52,8 @@ function themeLight(){
     $( '#app-bar-title, .year-data' ).attr("style", "")
 
     $( '.story-abstract' ).attr("style", "")
+
+    $( '.bottom_nav nav a' ).attr('style', '')
 }
 
 function setTheme(){
