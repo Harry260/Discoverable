@@ -36,6 +36,9 @@
         bottom: 150px;
     }
 
+    #cursor{
+        display: none;
+    }
 
 }
 
