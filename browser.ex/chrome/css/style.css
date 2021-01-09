@@ -18,7 +18,7 @@ body{
     left: 0;
     top: 0;
     display: none;
-    z-index: 99999;
+    z-index: 2147483646;
 }
 
 .ex-pop{
@@ -31,7 +31,7 @@ body{
     top: calc(50vh - 155px);
     left: calc(50% - 225.0px);
     display: none;
-    z-index: 99999;
+    z-index: 2147483646;
 }
 
 .header-ex-pop{
