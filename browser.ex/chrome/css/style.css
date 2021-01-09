@@ -100,9 +100,6 @@ body{
     overflow: hidden;
     padding: 12px 0;
     display: none;
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
 
@@ -118,10 +115,11 @@ body{
 .pop-menu-options a{
     min-width: 100%;
     font-size: 13px;
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
     padding: 5px 15.0px;
     display: block;
+    user-select: none; /* Standard */
 }
 
 .pop-menu-more{
