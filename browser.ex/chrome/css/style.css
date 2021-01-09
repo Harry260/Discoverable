@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: HelveticaM;
+}
+
+body{
+    /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6f/Wikipedia_Screenshot.gif);
+    */background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ex-pop-overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.ex-pop{
+    background-color: #06090f;
+    height: 300px;
+    width: 450px;
+    border-radius: 20px;
+    position: fixed;
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.15);
+    top: calc(50vh - 155px);
+    left: calc(50% - 225.0px);
+    display: none;
+}
+
+.header-ex-pop{
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-ex-head{
+    background-image: url(../assets/favicon.png);
+    height: 30px;
+    width: 30px;
+    background-size: 100%;
+    border-radius: 60px;
+}
+
+.menu-ex-head{
+    height: 30px;
+    width: 30px;
+    border-radius: 35px;
+}
+
+.menu-ex-head:hover{
+    background-color: #0d1117;
+}
+
+.menu-inner-icon-svg{
+    background-image: url(../assets/more_horiz-24px.svg);
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-size: 100%;
+}
+
+.content-ex-pop{
+    padding: 20px 30px;
+    scroll-behavior: smooth;
+}
+
+.head-text-ex{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.para-text-ex{
+    color: #e6e6e6;
+    font-size: 15px;
+}
+.para-text-ex p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.pop-menu-more{
+    position: absolute;
+    width: 120px;
+    background: rgba(46, 48, 49, 0.70);
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.15);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 12px 0;
+    display: none;
+}
+
+.menu-pop-overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pop-menu-options a{
+    min-width: 100%;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15.0px;
+    display: block;
+}
+
+.pop-menu-more{
+    display: none;
+}
+.pop-menu-more a:hover{
+    background-color: rgba(29, 29, 31, 0.123);
+}
+
+.more-opt{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button-div-ex{
+    background-color: #0366d6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.more-over-window{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.more-over-inner{
+    background-color: #0d1117;
+    top: 20px;
+    bottom: 20px;
+    position: absolute;
+    width: 450px;
+    left: calc(50% - 225px);
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    overflow-y: scroll;
+}
+
+.more-over-inner p {
+    margin-top: 13px;
+    color: #e6e6e6;
+}
+.more-over-inner h1{
+    margin-bottom: 20px;
+}
+
+.more-over-inner::-webkit-scrollbar {
+    width: 5px;
+}
+   
+.more-over-inner::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.144); 
+    border-radius: 20px;
+}
+
+.image-ex{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Menu*/
+ul.tools {
+    display: none;
+    list-style: none;
+    background:#202225;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+    position: absolute;
+    padding: 10px;
+}
+
+ul.tools:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.flexed-pop-selection{
+    display: flex;
+}
+
+.sel-icon{
+    background-image: url(../assets/favicon.png);
+    height: 20px;
+    width: 20px;
+    background-size: 100%;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.sel-text{
+    color: white;
+}
+
+.alert-box-ex{
+    background:#202225;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    color: white;
+    border-radius: 4px;
+    left: calc(50% - 70px);
+    bottom: 10px;
+    display: none;
+}
+
+.alert-box-ex h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.wiki-content-btn{
+    background-color: #0366d6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header-on-the-window{
+    display: flex;
+    justify-content: space-between;
+}
+.close-more-content{
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.close-more-content:hover{
+    background-color: #202225;
+}
+
+
+.closeMore{
+    width: 20px;
+    height: 20px;
+}
