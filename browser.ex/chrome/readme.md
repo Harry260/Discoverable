@@ -1,1 +1,1 @@
-JS files for extensions in chrome envirement
+JS files for extensions in chrome environment
