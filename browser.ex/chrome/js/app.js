@@ -7,7 +7,7 @@ function selection(){
 
 function SetTextInfo(text){
 
-    var apiUrl = 'https://simple.wikipedia.org/w/api.php?format=json&action=query&origin=*&prop=extracts&exintro&explaintext&redirects=1&titles=' + text;
+    var apiUrl = 'https://en.wikipedia.org/w/api.php?format=json&action=query&origin=*&prop=extracts&exintro&explaintext&redirects=1&titles=' + text;
     fetch(apiUrl).then(res => res.json()).then((jsondata) => {
 
         /* Parsing API Response*/
