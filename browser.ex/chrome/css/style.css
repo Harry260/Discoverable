@@ -75,6 +75,7 @@ body{
 
 .head-text-ex{
     color: white;
+    margin:0;
     margin-bottom: 10px;
     border: none !important;
     outline: none !important;
@@ -122,6 +123,7 @@ body{
     padding: 5px 15.0px;
     display: block;
     user-select: none; /* Standard */
+    margin:0 !important;
 }
 
 .pop-menu-more{
@@ -177,6 +179,7 @@ body{
     color: #e6e6e6;
 }
 .more-over-inner h1{
+    margin:0;
     margin-bottom: 20px;
     color: white !important;
     border: none !important;
