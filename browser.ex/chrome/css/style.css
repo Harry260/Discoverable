@@ -76,6 +76,8 @@ body{
 .head-text-ex{
     color: white;
     margin-bottom: 10px;
+    border: none !important;
+    outline: none !important;
 }
 
 .para-text-ex{
@@ -143,6 +145,7 @@ body{
     position: absolute;
     bottom: 25px;
     left: 25px;
+    user-select: none !important;
 }
 
 .more-over-window{
@@ -175,6 +178,10 @@ body{
 }
 .more-over-inner h1{
     margin-bottom: 20px;
+    color: white !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .more-over-inner::-webkit-scrollbar {
@@ -246,18 +253,20 @@ ul.tools:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 15px;
+    user-select: none;
 }
 
 .wiki-content-btn{
     background-color: #0366d6;
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
     padding: 10px 15px;
     margin-top: 20px;
     width: 100%;
     display: block;
     border-radius: 5px;
     text-align: center;
+    user-select: none !important;
 }
 
 .header-on-the-window{
